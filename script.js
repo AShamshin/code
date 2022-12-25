@@ -1,6 +1,5 @@
-function square(number) {
-  let a;
-  a = number * number;
-  return a;
+function helloWorld() {
+  let str = 'Hello World!';
+
+  console.log(str);
 }
-alert(squares(3));
