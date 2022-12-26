@@ -1,6 +1,4 @@
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-  let a = mpg * fuelLeft >= distanceToPump ? true : false;
-
-  return alert(a);
+const stringToNumber = function (str) {
+  let n = +str;
+  return n;
 };
-zeroFuel(50, 25, 2);
