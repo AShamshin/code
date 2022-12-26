@@ -1,5 +1,6 @@
-function helloWorld() {
-  let str = 'Hello World!';
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  let a = mpg * fuelLeft >= distanceToPump ? true : false;
 
-  console.log(str);
-}
+  return alert(a);
+};
+zeroFuel(50, 25, 2);
