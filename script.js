@@ -1,12 +1,5 @@
-function howManyLightsabersDoYouOwn(name) {
-  let a;
-
-  if (name == 'Zach') {
-    a = 18;
-  } else {
-    a = 0;
-  }
-
-  return alert(a);
+function multiply(a, b) {
+  a * b;
+  return alert(a * b);
 }
-howManyLightsabersDoYouOwn('Zach');
+multiply(3, 5);
