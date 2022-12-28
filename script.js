@@ -1,4 +1,8 @@
-function getAge(inputString) {
-  let a = inputString[0];
-  return +a;
+function problem(x) {
+  if (typeof x == 'string') {
+    return 'Error';
+  } else {
+    return x * 50 + 6;
+  }
 }
+console.log(problem(5));
