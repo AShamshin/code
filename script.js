@@ -1,4 +1,4 @@
-function fixTheMeerkat(arr) {
-  return arr.reverse();
+function addFive(num) {
+  var total = num + 5;
+  return total;
 }
-console.log(fixTheMeerkat(['tail', 'body', 'head']));
