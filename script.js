@@ -1,10 +1,8 @@
-function repeatStr(n, s) {
-  let a = '';
-
-  for (let i = 0; i < n; i++) {
-    a += s;
+function apple(x) {
+  if (x * x > 1000) {
+    return "It's hotter than the sun!!";
+  } else {
+    return 'Help yourself to a honeycomb Yorkie for the glovebox.';
   }
-
-  return String(a);
 }
-console.log(repeatStr(3, 'ha'));
+console.log(apple('90'));
