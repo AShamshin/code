@@ -1,3 +1,12 @@
-function makeUpperCase(str) {
-  return str.toUpperCase();
+function findAverage(array) {
+  if (array.length === 0) {
+    return 0;
+  }
+
+  let a = 0;
+  for (let i = 0; i < array.length; i++) {
+    a += array[i];
+  }
+  return a / array.length;
 }
+console.log(findAverage([]));
