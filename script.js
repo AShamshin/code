@@ -1,12 +1,9 @@
-function basicOp(operation, value1, value2) {
-  if (operation == '+') {
-    return value1 + value2;
-  } else if (operation == '-') {
-    return value1 - value2;
-  } else if (operation == '*') {
-    return value1 * value2;
-  } else if (operation == '/') {
-    return value1 / value2;
+function litres(time) {
+  let i = 0.5 * time;
+  if (i < 1) {
+    i = 0;
   }
+
+  return Math.trunc(i);
 }
-console.log(basicOp('+', 4, 7));
+console.log(litres(12.3));
