@@ -1,6 +1,13 @@
-function check(a, x) {
-  let b = a.find((item) => item == x);
+function betterThanAverage(classPoints, yourPoints) {
+  let a = 0;
+  classPoints.push(yourPoints);
 
-  return b === x ? true : false;
+  for (let i = 0; i < classPoints.length; i++) {
+    a += classPoints[i];
+  }
+  if (a / classPoints.length < yourPoints) {
+    return true;
+  }
+  return false;
 }
-console.log(check([], 0));
+console.log(betterThanAverage([4, 7, 5, 3], 5));
