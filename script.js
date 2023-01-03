@@ -1,9 +1,6 @@
-function litres(time) {
-  let i = 0.5 * time;
-  if (i < 1) {
-    i = 0;
-  }
+function check(a, x) {
+  let b = a.find((item) => item == x);
 
-  return Math.trunc(i);
+  return b === x ? true : false;
 }
-console.log(litres(12.3));
+console.log(check([], 0));
