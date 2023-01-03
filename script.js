@@ -1,13 +1,4 @@
-function betterThanAverage(classPoints, yourPoints) {
-  let a = 0;
-  classPoints.push(yourPoints);
-
-  for (let i = 0; i < classPoints.length; i++) {
-    a += classPoints[i];
-  }
-  if (a / classPoints.length < yourPoints) {
-    return true;
-  }
-  return false;
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs((a = sonYearsOld - (dadYearsOld - sonYearsOld)));
 }
-console.log(betterThanAverage([4, 7, 5, 3], 5));
+console.log(twiceAsOld(44, 22));
