@@ -33,12 +33,9 @@
 
 // console.log(invert([-1, -2, -3, -4, -5]));
 
-function smallEnough(a, limit) {
-  let arr = a.find((item) => item > limit);
-  if (arr == undefined) {
-    return true;
-  }
-  return false;
+function invert(array) {
+  let arr = array.map((item) => (item ? item * -1 : -0));
+  return arr;
 }
 
-console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100));
+console.log(invert([-1, -2, -3, -4, -5]));
