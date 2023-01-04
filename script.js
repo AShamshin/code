@@ -33,10 +33,12 @@
 
 // console.log(invert([-1, -2, -3, -4, -5]));
 
-function addLength(str) {
-  let array = str.split(' ');
-
-  let arr = array.map((item) => item + ' ' + item.length);
-  return arr;
+function smallEnough(a, limit) {
+  let arr = a.find((item) => item > limit);
+  if (arr == undefined) {
+    return true;
+  }
+  return false;
 }
-console.log(addLength('apple ban'));
+
+console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100));
