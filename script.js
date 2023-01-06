@@ -1,10 +1,8 @@
-function getSumOfDigits(integer) {
-  var sum = 0;
-  var digits = Math.floor(integer).toString();
-
-  for (var ix = 0; ix < digits.length; ix++) {
-    sum += +digits[ix];
+function makeNegative(num) {
+  if (num <= 0) {
+    return num;
+  } else {
+    return -num;
   }
-  return sum;
 }
-console.log(getSumOfDigits(123));
+console.log(makeNegative(42));
