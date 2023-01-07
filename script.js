@@ -1,8 +1,4 @@
-var summation = function (num) {
-  let a = 0;
-  for (let i = 1; i <= num; i++) {
-    a += i;
-  }
-  return a;
-};
-console.log(summation(8));
+function remainder(n, m) {
+  return Math.max(n, m) % Math.min(n, m);
+}
+console.log(remainder(0, 1));
