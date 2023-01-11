@@ -3,37 +3,44 @@ let buttonMinus = document.getElementById('buttonMinus');
 let buttonMultiply = document.getElementById('buttonMultiply');
 let buttonDivide = document.getElementById('buttonDivide');
 
+let input1 = document.getElementById('number1');
+let input2 = document.getElementById('number2');
+
+function getNumber1() {
+  return Number(input1.value);
+}
+
+function getNumber2() {
+  return Number(input2.value);
+}
+
+function makeOperation(operationCode) {
+  let result;
+  if (operationCode === '+') {
+    result = getNumber1() + getNumber2();
+  } else if (operationCode === '-') {
+    result = getNumber1() - getNumber2();
+  } else if (operationCode === '*') {
+    result = getNumber1() * getNumber2();
+  } else if (operationCode === '/') {
+    result = getNumber1() / getNumber2();
+  } else {
+    alert('operation is unknown');
+  }
+  alert(result);
+}
+
 function onButtonPlusClick() {
-  let input1 = document.getElementById('number1');
-  let input2 = document.getElementById('number2');
-  let number1 = Number(input1.value);
-  let number2 = Number(input2.value);
-  let summa = number1 + number2;
-  alert(summa);
+  makeOperation('+');
 }
 function onButtonMinusClick() {
-  let input1 = document.getElementById('number1');
-  let input2 = document.getElementById('number2');
-  let number1 = Number(input1.value);
-  let number2 = Number(input2.value);
-  let summa = number1 - number2;
-  alert(summa);
+  makeOperation('-');
 }
 function onButtonMultiplyClick() {
-  let input1 = document.getElementById('number1');
-  let input2 = document.getElementById('number2');
-  let number1 = Number(input1.value);
-  let number2 = Number(input2.value);
-  let summa = number1 * number2;
-  alert(summa);
+  makeOperation('*');
 }
 function onButtonDivideClick() {
-  let input1 = document.getElementById('number1');
-  let input2 = document.getElementById('number2');
-  let number1 = Number(input1.value);
-  let number2 = Number(input2.value);
-  let summa = number1 / number2;
-  alert(summa);
+  makeOperation('/');
 }
 buttonPlus.addEventListener('click', onButtonPlusClick);
 buttonMinus.addEventListener('click', onButtonMinusClick);
