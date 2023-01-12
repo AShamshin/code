@@ -1,6 +1,4 @@
-function hoopCount(n) {
-  let i =
-    n >= 10 ? 'Great, now move on to tricks' : 'Keep at it until you get it';
-  return i;
+function mystery() {
+  var results = { sanity: 'Hello' };
+  return;
 }
-alert(hoopCount(3));
