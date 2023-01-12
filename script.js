@@ -1,10 +1,6 @@
-function updateLight(current) {
-  if (current == 'green') {
-    return 'yellow';
-  } else if (current == 'yellow') {
-    return 'red';
-  } else if (current == 'red') {
-    return 'green';
-  }
+function hoopCount(n) {
+  let i =
+    n >= 10 ? 'Great, now move on to tricks' : 'Keep at it until you get it';
+  return i;
 }
-console.log(updateLight('green'));
+alert(hoopCount(3));
