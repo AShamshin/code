@@ -20,12 +20,21 @@ imagesUrls.push(
 let currentImageIndex = 0;
 
 slideImage.src = imagesUrls[currentImageIndex];
+showPrevBtn.disabled = true;
 
 function onShowPrevBtnClick() {
   currentImageIndex--;
   slideImage.src = imagesUrls[currentImageIndex];
+  showNextBtn.disabled = false;
+  if (currentImageIndex === 0) {
+    showPrevBtn.disabled = true;
+  }
 }
 function onShowNextBtnClick() {
   currentImageIndex++;
   slideImage.src = imagesUrls[currentImageIndex];
+  showPrevBtn.disabled = false;
+  if (currentImageIndex === imagesUrls.length - 1) {
+    showNextBtn.disabled = true;
+  }
 }
