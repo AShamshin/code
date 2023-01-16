@@ -1,5 +1,5 @@
-let slider1 = new Slider();
-let slider2 = new Slider();
+function sumStr(a, b) {
+  let c = Number(a) + Number(b);
 
-slider1.start('itk-slider1');
-slider2.start('itk-slider2');
+  return String(c);
+}
