@@ -20,7 +20,7 @@
   justify-content: flex-end;
 }
 .screen b {
-  font-size: 71px;
+  font-size: 52px;
 }
 
 .buttons-block {
@@ -39,6 +39,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(232, 164, 164);
+  background-color: rgb(199, 232, 164);
   cursor: pointer;
+  font-size: 30px;
+}
+.button:hover {
+  background: #0078bf;
+  color: #fff;
+}
+.buttonDelet {
+  width: 135px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(236, 107, 107);
+  margin-left: 150px;
+  margin-bottom: -50px;
+  font-size: 30px;
 }
