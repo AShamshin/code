@@ -59,9 +59,15 @@ const a = [
 let b = a.map(function (item) {
   return {
     ...item,
-    dateStart: item.dateStart.split('.').join('-'),
-    dateEnd: item.dateEnd.split('.').join('-'),
+    dateStart: item.dateStart.split('.').reverse().join('-'),
+    dateEnd: item.dateEnd.split('.').reverse().join('-'),
   };
+
+  // return {
+  //   ...item,
+  //   dateStart: item.dateStart.split('.').join('-'),
+  //   dateEnd: item.dateEnd.split('.').join('-'),
+  // };
 });
 
 console.log(b);
