@@ -1,13 +1,9 @@
-function bmi(weight, height) {
-  let c = weight / (height * height);
+function grow(x) {
+  let b = 1;
 
-  if (c <= 18.5) {
-    return 'Underweight';
-  } else if (c <= 25.0) {
-    return 'Normal';
-  } else if (c <= 30) {
-    return 'Overweight';
-  } else {
-    return 'Obese';
+  for (let a = 0; a < x.length; a++) {
+    b *= x[a];
   }
+  return b;
 }
+console.log(grow([4, 1, 1, 1, 5]));
