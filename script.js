@@ -1,5 +1,10 @@
-function mango(quantity, price) {
-  a = Math.floor(quantity / 3);
-  return price * (quantity - a);
+function createArray(number) {
+  var newArray = [];
+
+  for (var counter = 1; counter <= number; ++counter) {
+    newArray.push(counter);
+  }
+
+  return newArray;
 }
-console.log(mango(9, 5));
+console.log(createArray(2));
