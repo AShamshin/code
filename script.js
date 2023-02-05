@@ -1,10 +1,9 @@
-function createArray(number) {
-  var newArray = [];
+function isPythagoreanTriple(integers) {
+  integers.sort((a, b) => a - b);
 
-  for (var counter = 1; counter <= number; ++counter) {
-    newArray.push(counter);
-  }
-
-  return newArray;
+  return (
+    integers[0] * integers[0] + integers[1] * integers[1] ===
+    integers[2] * integers[2]
+  );
 }
-console.log(createArray(2));
+console.log(isPythagoreanTriple([3, 5, 9]));
