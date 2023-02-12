@@ -1,8 +1,5 @@
-function numberToPower(number, power) {
-  let a = 1;
-  for (let i = 0; i < power; i++) {
-    a *= number;
-  }
-  return a;
+function reverseWords(str) {
+  return str.split(' ').reverse().join(' ');
 }
-console.log(numberToPower(10, 4));
+
+console.log(reverseWords('hello world!'));
