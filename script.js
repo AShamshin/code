@@ -1,5 +1,4 @@
-function reverseWords(str) {
-  return str.split(' ').reverse().join(' ');
+function include(arr, item) {
+  return arr.includes(item);
 }
-
-console.log(reverseWords('hello world!'));
+console.log(include([1, 2, 3, 4], 7));
