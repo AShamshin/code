@@ -1,33 +1,10 @@
-function countSheeps(arrayOfSheep) {
-  arrayOfSheep = arrayOfSheep.filter((f) => (f ? f : f));
-  return arrayOfSheep.length;
+function powersOfTwo(n) {
+  const result = [1];
+  if (n <= 0) return result;
+  for (let i = 1; i <= n; i++) {
+    result.push(2 ** i);
+  }
+  return result;
 }
 
-console.log(
-  countSheeps([
-    true,
-    true,
-    true,
-    false,
-    true,
-    true,
-    true,
-    true,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    false,
-    true,
-    true,
-    true,
-    true,
-    true,
-    false,
-    false,
-    true,
-    true,
-  ])
-);
+console.log(powersOfTwo(4));
