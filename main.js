@@ -1,10 +1,4 @@
-function powersOfTwo(n) {
-  const result = [1];
-  if (n <= 0) return result;
-  for (let i = 1; i <= n; i++) {
-    result.push(2 ** i);
-  }
-  return result;
+function move(position, roll) {
+  return position + (roll + roll);
 }
-
-console.log(powersOfTwo(4));
+console.log(move(0, 4));
