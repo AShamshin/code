@@ -1,4 +1,7 @@
-function move(position, roll) {
-  return position + (roll + roll);
+function DNAtoRNA(dna) {
+  return dna
+    .split('')
+    .map((d) => (d === 'T' ? (d = 'U') : d))
+    .join('');
 }
-console.log(move(0, 4));
+console.log(DNAtoRNA('TTTT'));
