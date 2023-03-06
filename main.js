@@ -1,7 +1,4 @@
-function DNAtoRNA(dna) {
-  return dna
-    .split('')
-    .map((d) => (d === 'T' ? (d = 'U') : d))
-    .join('');
+function pillars(numPill, dist, width) {
+  return numPill === 1 ? 0 : (numPill - 1) * dist * 100 + (numPill - 2) * width;
 }
-console.log(DNAtoRNA('TTTT'));
+console.log(pillars(1, 10, 10));
