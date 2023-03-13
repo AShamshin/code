@@ -1,12 +1,9 @@
-function removeEveryOther(arr) {
-  let a = [];
-  for (i = 0; i < arr.length; i++) {
-    if (i % 2 == 0) {
-      // console.log(arr[i]);
-      a.push(arr[i]);
+function findMultiples(integer, limit) {
+  let count = [];
+  for (let i = integer; i <= limit; i++) {
+    if (i % integer === 0) {
+      count.push(i);
     }
   }
-  return a;
+  return count;
 }
-
-console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']));
