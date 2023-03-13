@@ -1,4 +1,12 @@
-function pillars(numPill, dist, width) {
-  return numPill === 1 ? 0 : (numPill - 1) * dist * 100 + (numPill - 2) * width;
+function removeEveryOther(arr) {
+  let a = [];
+  for (i = 0; i < arr.length; i++) {
+    if (i % 2 == 0) {
+      // console.log(arr[i]);
+      a.push(arr[i]);
+    }
+  }
+  return a;
 }
-console.log(pillars(1, 10, 10));
+
+console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']));
