@@ -1,13 +1,18 @@
-function trim(str, size) {
-  let a = '';
-
-  if (str.length > size && size <= 3) {
-    a = str.substr(0, size) + '...';
-  } else if (str.length > size) {
-    a = str.substr(0, size - 3) + '...';
-  } else if (str.length <= size) {
-    a = str;
-  }
-  return a;
+function remove(string) {
+  return string
+    .split(' ')
+    .filter((f) => {
+      if (f[f.length - 1] === '!' && f[0] === '!') {
+        return f;
+      } else if (f[f.length - 2] === '!') {
+        return f;
+      } else if ((f[f.length - 1] === '!') | (f[0] === '!')) {
+        return '';
+      } else {
+        return f;
+      }
+    })
+    .join(' ');
 }
-console.log(trim('Creating kata is fun', 14));
+
+console.log(remove('gdh hykefxk drcu sobc!'));
