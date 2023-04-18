@@ -1,4 +1,4 @@
-function converter(mpg) {
-  return +((mpg * 1.609344) / 4.54609188).toFixed(2);
+function sixToast(num) {
+  return Math.abs(6 - num);
 }
-console.log(converter(20));
+console.log(sixToast(17));
