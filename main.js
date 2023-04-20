@@ -1,4 +1,6 @@
-function sixToast(num) {
-  return Math.abs(6 - num);
+var websites = [];
+
+for (let i = 0; i <= 999; i++) {
+  websites.push('codewars');
 }
-console.log(sixToast(17));
+console.log(websites);
